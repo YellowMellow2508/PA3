@@ -1,0 +1,190 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 21. tra 2022., 21:13:54
+    Author     : Korisnik
+*/
+
+body{
+    background-color: azure;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/422/175/original/blue-gradient-liquid-smoke-background-water-surface-and-light-dynamic-wave-motion-free-video.jpg);
+}
+.accordion {
+  background-color: white;
+  color: salmon;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: azure; 
+  color: salmon;
+}
+
+.klizac {
+  padding: 0px;
+  display: none;
+  
+  background-color: salmon;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: bisque;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+} 
+
+/*4 Diva*/
+.okvir{
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+}
+
+.divovi{
+   position: relative;
+   top: 50%;
+   left: 50%;
+   margin: -35px 0 0 -10px;
+   font-size: 35px;
+}
+
+#prvi{
+   width: 200px;
+   height: 200px;
+   background-color: coral;
+   float: left;
+   border: salmon;
+   margin-left: 20px;
+   margin-bottom: 20px;
+   position: relative;
+   color: white;
+   font-family:fantasy;
+   animation-name:mojprvi;
+    animation-duration:8s;
+    animation-timing-function:linear;
+    animation-delay:3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-play-state:running;
+    -moz-box-shadow: -5px -5px 5px #000;
+    -webkit-box-shadow:-5px -5px 5px #000;
+    box-shadow: -5px -5px 5px #000;
+}
+@keyframes mojprvi{
+    0%   {background:coral; left:0px; top:0px;}
+    25%  {background:yellow; right:200px; top:0px;}
+    50%  {background:blue; left:200px; top:0px;}
+    75%  {background:green; right:200px; top:0px;}
+    100% {background:#016fba; left:200px; top:0px;}
+    }
+#drugi{
+   width: 200px;
+   height: 200px;
+   background-color:aquamarine;
+   float: left;
+   border: cyan;
+   margin-left: 20px;
+   margin-bottom: 20px;
+   position: relative;
+   color: crimson;
+   font-family:fantasy;
+   -moz-box-shadow: -5px -5px 5px #000;
+    -webkit-box-shadow:-5px -5px 5px #00008b;
+    box-shadow: -5px -5px 5px #000;
+}
+
+#treci{
+   width: 200px;
+   height: 200px;
+   background-color: bisque;
+   float: left;
+   border: beige;
+   margin-left: 20px;
+   margin-bottom: 20px;
+   position: relative;
+   color: brown;
+   font-family:fantasy;
+   -moz-box-shadow: -5px -5px 5px #00008b;
+    -webkit-box-shadow:-5px -5px 5px #00008b;
+    box-shadow: -5px -5px 5px #000;
+     -moz-border-radius-bottomright: 54px;
+    border-bottom-right-radius: 54px;
+    -moz-border-top-left-radius: 54px;
+    border-top-left-radius: 54px; 
+}
+#cetvrti{
+   width: 200px;
+   height: 200px;
+   background-color:crimson;
+   float: left;
+   border:darkred;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   position: relative;
+   color: white;
+   font-family:fantasy;
+    -ms-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+   -moz-box-shadow: -5px -5px 5px #00008b;
+    -webkit-box-shadow:-5px -5px 5px #00008b;
+    box-shadow: -5px -5px 5px #00008b;
+    
+}
+    @media screen and (max-width: 500px){
+        .okvir {
+                width: 70%;
+        };
+    } 
+    @media screen and (max-device-width: 700px){
+        .okvir{
+           width: 100%;
+        }
+    }
+/*RGB*/
+.klizac{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 25px;
+    height: auto;
+}
+.tekst{
+    color: #FFA07A;
+    font-size: 40px;
+}
+.naslovi{
+    color: white;
+}
+.bodyJ{
+    margin:25px;
+}
+th, td, p, input{
+    font:14px Verdana;
+}
+
+table, th, td{
+    border: solid 1px black;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+th {
+    font-weight:bold;
+}
